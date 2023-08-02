@@ -6,9 +6,8 @@ import { itemContent } from "./itemContent";
 function App() {
   return (
     <div className="App">
-      <h4 style={{ color: "#fff", paddingLeft: "30px" }}>perf demo</h4>
       <Virtuoso
-        increaseViewportBy={{top: 800, bottom: 800}}
+        increaseViewportBy={{ top: 800, bottom: 800 }}
         totalCount={500}
         itemContent={(subIndex) => itemContent(subIndex)}
         components={{
